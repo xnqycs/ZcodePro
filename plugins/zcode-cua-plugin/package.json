@@ -1,18 +1,16 @@
 {
   "$schema": "https://json.schemastore.org/package.json",
   "name": "@zcode/zcode-cua-plugin",
-  "version": "0.6.4",
+  "version": "0.6.5",
   "private": true,
   "description": "ZCode CUA SDK and skill package; execution is provided by the shared node_repl host.",
-  "license": "MIT",
+  "license": "Apache-2.0",
   "type": "module",
   "main": "./scripts/computer-use-client.mjs",
   "scripts": {
     "build": "node scripts/check-sdk.mjs",
     "clean": "node ../../scripts/clean-dist.mjs",
-    "sync:skill": "node scripts/sync-skill-from-zcode-cua.mjs",
-    "bump:producer": "node scripts/bump-zcode-cua-producer.mjs",
-    "check:baseline": "node scripts/check-cua-baseline.mjs",
+    "sync:skill": "node scripts/sync-skill.mjs",
     "sync:cache": "node scripts/sync-cache.mjs",
     "version:check": "node scripts/check-version-coherence.mjs --check",
     "sync:version": "node scripts/check-version-coherence.mjs",
@@ -21,7 +19,7 @@
     "typecheck": "node scripts/check-sdk.mjs"
   },
   "dependencies": {
-    "@zcode/zcode-cua": "catalog:"
+    "@zcode/zcode-cua": "workspace:*"
   },
   "devDependencies": {
     "@types/node": "^24.0.0",
