@@ -182,7 +182,8 @@ seeding can populate — use the seed install above for full parity.
 | Environment | Plugins | Computer Use |
 | --- | --- | --- |
 | Windows x64, ZCode 3.14.x | ✅ | ✅ verified end-to-end |
-| ZCode 3.15.1 | ✅ packages synced to the 3.15.1 set (adds `visualize`; doc skills → 0.1.8, computer-use → 0.6.4) | ⚠️ source-verified only — upstream has not shipped an OSS 3.15.1 binary yet; the CUA stub signatures and broker IPC (v3, backwards-compatible with v2 clients) are unchanged in source |
+| ZCode 3.15.1 | ✅ packages of the 3.15.1 set (adds `visualize`; doc skills → 0.1.8, computer-use → 0.6.4) | ⚠️ source-verified only — upstream has not shipped an OSS 3.15.1 binary yet; the CUA stub signatures and broker IPC (v3, backwards-compatible with v2 clients) are unchanged in source |
+| Windows x64, ZCode 3.16.x | ✅ packages synced to the 3.16.3 bundled set (doc skills → 0.2.1 / 0.2.2, computer-use → 0.6.5) | ⚠️ not re-verified end-to-end — `runtimes/` now carries the 0.6.5 runtime and helper extracted from ZCode 3.16.3 |
 | Windows x64, other versions | ✅ | ⚠️ likely — the patcher detects stub chunks by signature, not filename, but the helper's IPC contract may drift between releases |
 | Windows ARM64 | ✅ | ❌ `ax_native.node` is x64-only |
 | macOS arm64 / x64 | ✅ | ✅ verified on-device (3.14.3, arm64); x64 untested but same path |

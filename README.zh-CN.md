@@ -160,7 +160,8 @@ zcode plugins install documents@zcode-plugins
 | 环境 | 插件 | Computer Use |
 | --- | --- | --- |
 | Windows x64 + ZCode 3.14.x | ✅ | ✅ 已端到端验证 |
-| ZCode 3.15.1 | ✅ 插件包已同步 3.15.1（新增 `visualize`；文档技能→0.1.8、computer-use→0.6.4） | ⚠️ 仅源码级验证——上游尚未发布开源版 3.15.1 二进制；源码中 CUA stub 签名与 broker IPC（v3，向下兼容 v2 客户端）未变 |
+| ZCode 3.15.1 | ✅ 3.15.1 版插件包（新增 `visualize`；文档技能→0.1.8、computer-use→0.6.4） | ⚠️ 仅源码级验证——上游尚未发布开源版 3.15.1 二进制；源码中 CUA stub 签名与 broker IPC（v3，向下兼容 v2 客户端）未变 |
+| Windows x64 + ZCode 3.16.x | ✅ 插件包已同步 3.16.3 内置版本（文档技能→0.2.1 / 0.2.2、computer-use→0.6.5） | ⚠️ 未做端到端复验——`runtimes/` 已更新为从 ZCode 3.16.3 提取的 0.6.5 runtime 与 helper |
 | Windows x64 + 其他版本 | ✅ | ⚠️ 大概率可用——补丁器按签名而非文件名识别 stub，但 helper 的 IPC 契约可能随版本漂移 |
 | Windows ARM64 | ✅ | ❌ `ax_native.node` 只有 x64 版 |
 | macOS arm64 / x64 | ✅ | ✅ 已真机验证（3.14.3, arm64）；x64 同路径未实测 |
