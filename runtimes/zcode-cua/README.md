@@ -1,7 +1,7 @@
 # @zcode/zcode-cua
 
 Computer Use runtime for ZCode: permission-broker wire client and server
-(NDJSON, IPC v2, authenticate handshake), the tool-call runtime
+(NDJSON, IPC v3, authenticate handshake), the tool-call runtime
 (`createComputerUseRuntime`), Helper install/launch/verify and lifecycle
 management, the PiP session client, and the frame-integrity contracts
 (image_ref pairing, `zcode.cua/official-frame-integrity-v1`).
@@ -9,7 +9,9 @@ management, the PiP session client, and the frame-integrity contracts
 Layout:
 
 - `index.js` — `createComputerUseRuntime` entry point.
-- `vendor/dist-index.js` — bundled runtime slice (single ES module).
+- `vendor/dist-index.js` — official 0.6.5 bundled runtime, extracted from the
+  ZCode 3.16.3 `node-repl-host` server bundle and re-exported as a single ES
+  module.
 - `broker.js` — wire protocol (`parseRequestLine`, `okResponse`,
   `errorResponse`, `dispatchRequest`, `handleRequestLine`), socket-path
   helpers, `callBrokerMethod`, `probeHelperHealth`, error factories.

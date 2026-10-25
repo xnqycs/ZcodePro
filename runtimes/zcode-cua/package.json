@@ -1,6 +1,6 @@
 {
   "name": "@zcode/zcode-cua",
-  "version": "0.6.3",
+  "version": "0.6.5",
   "private": true,
   "description": "Computer Use runtime for ZCode: permission broker client/server, Helper install and lifecycle, PiP session client, and official frame-integrity contracts.",
   "license": "Apache-2.0",
